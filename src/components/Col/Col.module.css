@@ -1,0 +1,8 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
