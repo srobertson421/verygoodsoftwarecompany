@@ -1,24 +1,43 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
 import Container from '../Container';
 import Row from '../Row';
 import Col from '../Col';
-import InstallAppButton from '../InstallAppButton';
 
-const Nav = () => (
+const Nav = ({
+  backPath = '/',
+  backText = 'Go Back',
+  forwardPath = '/',
+  forwardText = 'Go Forward',
+  includeBackLink = true,
+  includeMainLink = true,
+  includeForwardLink = true,
+  history
+}) => (
   <nav className={styles.mainNav}>
     <Container>
       <Row>
-        <Col>
-          <NavLink to="/">Home</NavLink>
-        </Col>
-        <Col>
-          <NavLink to="/about">About</NavLink>
-        </Col>
-        <Col>
-          <InstallAppButton />
-        </Col>
+        {
+          includeBackLink ? (
+            <Col>
+              <button onClick={() => history.push(backPath)}>{ backText }</button>
+            </Col>
+          ) : null
+        }
+        {
+          includeMainLink ? (
+            <Col>
+              <button onClick={() => history.push('/')}>Main Page</button>
+            </Col>
+          ) : null
+        }
+        {
+          includeForwardLink ? (
+            <Col>
+              <button onClick={() => history.push(forwardPath)}>{ forwardText }</button>
+            </Col>
+          ) : null
+        }
       </Row>
     </Container>
   </nav>
