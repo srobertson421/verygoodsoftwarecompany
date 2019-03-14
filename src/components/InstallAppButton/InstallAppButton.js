@@ -12,20 +12,22 @@ const InstallAppButton = () => {
   }, []);
 
   function installApp() {
-    deferredPrompt.prompt();
+    if(deferredPrompt) {
+      deferredPrompt.prompt();
 
-    deferredPrompt.userChoice.then(result => {
-      if(result.outcome === 'accepted') {
-        console.log('User wants to install');
-      } else {
-        console.log('User dismissed install');
-      }
+      deferredPrompt.userChoice.then(result => {
+        if(result.outcome === 'accepted') {
+          console.log('User wants to install');
+        } else {
+          console.log('User dismissed install');
+        }
 
-      setDeferredPrompt(null);
-    });
+        setDeferredPrompt(null);
+      });
+    }
   }
 
-  return deferredPrompt ? (
+  return deferredPrompt || process.env.NODE_ENV === 'development' ? (
     <button onClick={installApp}>Install App</button>
   ) : null;
 };
