@@ -12,7 +12,8 @@ const InstallAppButton = () => {
   }, []);
 
   function installApp() {
-    console.log(deferredPrompt);
+    deferredPrompt.prompt();
+
     deferredPrompt.userChoice.then(result => {
       if(result.outcome === 'accepted') {
         console.log('User wants to install');
