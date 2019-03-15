@@ -7,9 +7,9 @@ const Methods = ({ history }) => (
   <>
     <Nav
       backPath="/work"
-      backText="What We've Done"
+      backText="Work"
       forwardPath="/about"
-      forwardText="Who We Are"
+      forwardText="About"
       history={history}
     />
     <Row>

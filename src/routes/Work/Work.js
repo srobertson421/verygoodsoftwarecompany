@@ -8,7 +8,7 @@ const Work = ({ history }) => (
     <Nav
       includeBackLink={false}
       forwardPath="/methodology"
-      forwardText="How We Do It"
+      forwardText="Tech"
       history={history}
     />
     <Row>

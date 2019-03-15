@@ -7,9 +7,9 @@ const About = ({ history }) => (
   <>
     <Nav
       backPath="/methodology"
-      backText="How We Do It"
+      backText="Tech"
       forwardPath="/contact"
-      forwardText="How To Reach Us"
+      forwardText="Contact"
       history={history}
     />
     <Row>

@@ -7,7 +7,7 @@ const Contact = ({ history }) => (
   <>
     <Nav
       backPath="/about"
-      backText="Who We Are"
+      backText="About"
       includeForwardLink={false}
       history={history}
     />
