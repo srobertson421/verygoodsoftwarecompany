@@ -1,4 +1,87 @@
-.mainLogo {
-  max-width: 60%;
+.topLeft {
+  position: relative;
+  background-color: #e6e6e6;
+  border-bottom: solid 1px black;
+}
+.topLeft::after {
+  content: 'V';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
   display: flex;
+  justify-content: flex-end;
+  line-height: 4rem;
+}
+.topLeft:hover {
+  background-color: #f6f6f6;
+}
+
+.topRight {
+  position: relative;
+  background-color: #e6e6e6;
+  border-left: solid 1px black;
+  border-bottom: solid 1px black;
+}
+.topRight::after {
+  content: 'G';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 4rem;
+}
+.topRight:hover {
+  background-color: #f6f6f6;
+}
+
+.bottomLeft {
+  position: relative;
+  background-color: #e6e6e6;
+  border-right: solid 1px black;
+}
+.bottomLeft::after {
+  content: 'S';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  /* box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); */
+}
+.bottomLeft:hover {
+  background-color: #f6f6f6;
+}
+
+.bottomRight {
+  position: relative;
+  background-color: #e6e6e6;
+}
+.bottomRight::after {
+  content: 'C';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  /* box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); */
+}
+.bottomRight:hover {
+  background-color: #f6f6f6;
 }
