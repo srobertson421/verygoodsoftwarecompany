@@ -7,7 +7,7 @@ import styles from './Home.module.css';
 const Home = ({ history }) => (
   <>
     <Row customStyles={{ height: '20%', alignContent: 'center' }}>
-      <Col>
+      <Col customStyles={{ height: '100%' }}>
         <h3>Very Good Software Company</h3>
       </Col>
     </Row>
