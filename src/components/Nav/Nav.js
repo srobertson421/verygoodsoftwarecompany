@@ -21,21 +21,21 @@ const Nav = ({
         <Col customStyles={{ padding: 0 }}>
           {
             includeBackLink ? (
-              <NavButton customStyles={{ backgroundColor: 'red' }} path={backPath} back history={history}>{ backText }</NavButton>
+              <NavButton customStyles={{ backgroundColor: '#f6f6f6' }} path={backPath} back history={history}>{ backText }</NavButton>
             ) : null
           }
         </Col>
         <Col customStyles={{ padding: 0}}>
           {
             includeMainLink ? (
-              <NavButton customStyles={{ backgroundColor: 'yellow' }} path="/" history={history}>Home</NavButton>
+              <NavButton customStyles={{ backgroundColor: '#e6e6e6' }} path="/" history={history}>Home</NavButton>
             ) : null
           }
         </Col>
         <Col customStyles={{ padding: 0 }}>
           {
             includeForwardLink ? (
-              <NavButton customStyles={{ backgroundColor: 'green' }} path={forwardPath} forward history={history}>{ forwardText }</NavButton>
+              <NavButton customStyles={{ backgroundColor: '#f6f6f6' }} path={forwardPath} forward history={history}>{ forwardText }</NavButton>
             ) : null
           }
         </Col>
