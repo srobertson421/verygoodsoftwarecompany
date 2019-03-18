@@ -10,7 +10,7 @@
   bottom: 0;
   height: 40px;
   width: 40px;
-  background-color: black;
+  background: var(--bg);
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -33,7 +33,7 @@
   bottom: 0;
   height: 40px;
   width: 40px;
-  background-color: black;
+  background: var(--bg);
   color: white;
   display: flex;
   justify-content: flex-start;
@@ -55,7 +55,7 @@
   top: 0;
   height: 40px;
   width: 40px;
-  background-color: black;
+  background: var(--bg);
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -76,7 +76,7 @@
   top: 0;
   height: 40px;
   width: 40px;
-  background-color: black;
+  background: var(--bg);
   color: white;
   display: flex;
   justify-content: flex-start;

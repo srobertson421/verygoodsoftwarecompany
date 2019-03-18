@@ -11,7 +11,7 @@ const Home = ({ history }) => (
         <h3>Very Good Software Company</h3>
       </Col>
     </Row>
-    <Row customStyles={{ height: '30%', alignContent: 'center' }}>
+    <Row customStyles={{ height: '30%', alignContent: 'center', color: '#000000' }}>
       <Col className={styles.topLeft} onClick={() => history.push('/work')} customStyles={{ cursor: 'pointer', height: '100%' }}>
         <h2>Work</h2>
       </Col>
@@ -19,7 +19,7 @@ const Home = ({ history }) => (
         <h2>Tech</h2>
       </Col>
     </Row>
-    <Row customStyles={{ height: '30%', alignContent: 'center' }}>
+    <Row customStyles={{ height: '30%', alignContent: 'center', color: '#000000' }}>
       <Col className={styles.bottomLeft} onClick={() => history.push('/about')} customStyles={{ cursor: 'pointer', height: '100%' }}>
         <h2>About</h2>
       </Col>
