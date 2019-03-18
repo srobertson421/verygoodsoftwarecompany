@@ -1,3 +1,11 @@
+.mainTitle {
+  font-size: 1.4rem;
+}
+
+.mainLink {
+  font-size: 1.2rem;
+}
+
 .topLeft {
   position: relative;
   background-color: #e6e6e6;
