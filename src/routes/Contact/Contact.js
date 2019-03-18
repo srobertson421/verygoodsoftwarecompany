@@ -26,6 +26,12 @@ const Contact = ({ history }) => {
     }).catch(error => console.log(error));
 
     e.preventDefault();
+
+    setFormState({
+      name: '',
+      email: '',
+      message: '',
+    });
   }
 
   return (
