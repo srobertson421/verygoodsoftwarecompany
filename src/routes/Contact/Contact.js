@@ -38,8 +38,9 @@ const Contact = ({ history }) => {
     <Row>
       <Col>
         <h1>Contact</h1>
-        <form name="contact" netlify className={styles.contactForm} onSubmit={contactSubmit}>
+        <form name="contact" data-netlify="true" netlify="true" className={styles.contactForm} onSubmit={contactSubmit}>
           <fieldset>
+            <input type="hidden" name="form-name" value="contact" />
             <label>Name</label>
             <input
               type="text"
