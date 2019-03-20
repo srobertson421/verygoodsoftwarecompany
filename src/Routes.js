@@ -14,7 +14,7 @@ const Routes = () => (
   <Router>
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
-        <Container customStyles={{ height: '100vh' }}>
+        <Container customStyles={{ height: '96vh' }}>
           <Route path="/" exact render={(props) => <Home {...props} /> } />
           <Route path="/about" render={(props) => (
               <>
@@ -64,6 +64,11 @@ const Routes = () => (
           )} />
         </Container>
       </Switch>
+      <small style={{
+        display: 'flex',
+        justifyContent: 'center',
+        fontSize: '0.7rem',
+      }}>&#169; Very Good Software Company 2019</small>
     </Suspense>
   </Router>
 );
