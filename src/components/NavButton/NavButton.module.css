@@ -8,5 +8,9 @@
   font-size: 1rem;
   cursor: pointer;
   width: 100%;
-  color: #000000;
+  color: #0b2645;
+}
+
+.navButton:hover {
+  background-color: #f6f6f6 !important;
 }

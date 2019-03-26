@@ -1,0 +1,13 @@
+.servicesList {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.servicesListItem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.servicesListItem:first-child {
+  margin-top: 0px;
+}

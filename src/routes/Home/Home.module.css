@@ -1,5 +1,7 @@
 .mainTitle {
-  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .mainLink {
@@ -8,88 +10,86 @@
 
 .topLeft {
   position: relative;
-  background-color: #e6e6e6;
+  background-color: #4a7db0;
   border-bottom: solid 1px black;
 }
-.topLeft::after {
-  content: 'V';
+/* .topLeft::after {
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
   height: 40px;
   width: 40px;
-  background: var(--bg);
-  color: white;
+  background-color: #0b2645;
+  color: #4a7db0;
   display: flex;
   justify-content: flex-end;
   line-height: 4rem;
-}
+} */
 .topLeft:hover {
   background-color: #f6f6f6;
 }
 
 .topRight {
   position: relative;
-  background-color: #e6e6e6;
+  background-color: #4a7db0;
   border-left: solid 1px black;
   border-bottom: solid 1px black;
 }
-.topRight::after {
-  content: 'G';
+/* .topRight::after {
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   height: 40px;
   width: 40px;
-  background: var(--bg);
-  color: white;
+  background-color: #0b2645;
+  color: #4a7db0;
   display: flex;
   justify-content: flex-start;
   line-height: 4rem;
-}
+} */
 .topRight:hover {
   background-color: #f6f6f6;
 }
 
 .bottomLeft {
   position: relative;
-  background-color: #e6e6e6;
+  background-color: #4a7db0;
   border-right: solid 1px black;
 }
-.bottomLeft::after {
-  content: 'S';
+/* .bottomLeft::after {
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
   height: 40px;
   width: 40px;
-  background: var(--bg);
-  color: white;
+  background-color: #0b2645;
+  color: #4a7db0;
   display: flex;
   justify-content: flex-end;
-  /* box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); */
-}
+} */
 .bottomLeft:hover {
   background-color: #f6f6f6;
 }
 
 .bottomRight {
   position: relative;
-  background-color: #e6e6e6;
+  background-color: #4a7db0;
 }
-.bottomRight::after {
-  content: 'C';
+/* .bottomRight::after {
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
   height: 40px;
   width: 40px;
-  background: var(--bg);
-  color: white;
+  background-color: #0b2645;
+  color: #4a7db0;
   display: flex;
   justify-content: flex-start;
-  /* box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); */
-}
+} */
 .bottomRight:hover {
   background-color: #f6f6f6;
 }
