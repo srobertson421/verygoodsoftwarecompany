@@ -9,7 +9,7 @@ const Home = ({ history }) => (
   <>
     <Row customStyles={{ alignContent: 'center' }}>
       <Col customStyles={{ height: '100%' }}>
-        <img className={`animated fadeInDown ${styles.mainTitle}`} alt="Very Good Software Company logo" src={logo} />
+        <img style={{ maxWidth: '80%' }} className={`animated fadeInDown ${styles.mainTitle}`} alt="Very Good Software Company logo" src={logo} />
         {/* <h1 className={`animated fadeInDown ${styles.mainTitle}`}>Very Good Software Company</h1> */}
       </Col>
     </Row>
