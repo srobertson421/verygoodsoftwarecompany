@@ -82,8 +82,8 @@ body {
   font-family: 'Gentium Book Basic', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--bg);
-  color: #FFFFFF;
+  background-color: #e6e6e6;
+  color: #0b2645;
 }
 
 code {

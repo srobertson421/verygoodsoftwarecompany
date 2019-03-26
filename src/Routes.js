@@ -19,8 +19,8 @@ const Routes = () => (
           <Route path="/about" render={(props) => (
               <>
                 <Nav
-                  backPath="/methodology"
-                  backText="Tech"
+                  backPath="/services"
+                  backText="Services"
                   forwardPath="/contact"
                   forwardText="Contact"
                   history={props.history}
@@ -32,8 +32,8 @@ const Routes = () => (
               <>
                 <Nav
                   includeBackLink={false}
-                  forwardPath="/methodology"
-                  forwardText="Tech"
+                  forwardPath="/services"
+                  forwardText="Services"
                   history={props.history}
                 />
                 <Work {...props} />
@@ -50,7 +50,7 @@ const Routes = () => (
                 <Contact {...props} />
               </>
           )} />
-          <Route path="/methodology" render={(props) => (
+          <Route path="/services" render={(props) => (
             <>
               <Nav
                 backPath="/work"
@@ -68,6 +68,7 @@ const Routes = () => (
         display: 'flex',
         justifyContent: 'center',
         fontSize: '0.7rem',
+        color: '#0b2645',
       }}>&#169; Very Good Software Company 2019</small>
     </Suspense>
   </Router>
