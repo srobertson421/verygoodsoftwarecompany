@@ -4,10 +4,6 @@ import Col from '../../components/Col';
 
 import styles from './Contact.module.css';
 
-const encode = (data) => Object.keys(data)
-.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-.join("&")
-
 const Contact = ({ history }) => {
 
   const [ formState, setFormState ] = useState({
@@ -17,12 +13,13 @@ const Contact = ({ history }) => {
   });
 
   function contactSubmit(e) {
-    fetch("/", {
+    fetch("/.netlify/functions/email", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formState })
-    }).then(() => {
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...formState })
+    }).then((response) => {
       console.log('Sent message successfully!');
+      console.log(response);
     }).catch(error => console.log(error));
 
     e.preventDefault();
@@ -38,9 +35,8 @@ const Contact = ({ history }) => {
     <Row>
       <Col>
         <h1>Contact</h1>
-        <form name="contact" data-netlify="true" netlify="true" className={styles.contactForm} onSubmit={contactSubmit}>
+        <form name="contact" className={styles.contactForm} onSubmit={contactSubmit}>
           <fieldset>
-            <input type="hidden" name="form-name" value="contact" />
             <label>Name</label>
             <input
               type="text"
@@ -69,7 +65,7 @@ const Contact = ({ history }) => {
               onChange={e => setFormState({ ...formState, message: e.target.value })}
               required
             />
-            <button style={{ color: 'white' }} type="submit">Send Message</button>
+            <button style={{ color: '#0b2645' }} type="submit">Send Message</button>
           </fieldset>
         </form>
       </Col>
