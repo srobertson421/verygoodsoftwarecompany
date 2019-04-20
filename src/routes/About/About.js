@@ -7,18 +7,12 @@ const About = ({ history }) => (
     <Col>
       <h1>About</h1>
       <p style={{ maxWidth: '75%', marginBottom: '30px', marginTop: '30px' }}>
-        Very Good Software Company is the creation of me, Sean Robertson. The goal
-        of this company is to put forth software products that are cutting-edge yet
-        accessible to anyone. Using my experience in enterprise technology at
-        companies like NBC and Groupon, my goal is to bring the latest
-        practices in web development to small-to-midsize companies that often
-        are forced to work with agencies that utilize out-dated technologies all
-        while charging an arm and a leg.
-      </p>
-      <p style={{ maxWidth: '75%' }}>
-        All the solutions used at Very Good Software Company are custom built
-        with the client and their customers in mind. Websites should be fast, easy
-        and accessible. Shoot us a message to get a free consultation.
+        Websites should be fast, easy and accessible. Very Good Software Company brings the 
+        latest practices in web development to small- and mid-size companies. All the solutions 
+        we design are custom built with the client and their customers in mind. My goal is to 
+        create products that are cutting-edge, yet accessible and user-friendly. Having come out 
+        of the world of enterprise technology at companies like NBC and Groupon, I believe we offer an 
+        alternative to agencies using outdated technologies and overpriced, prepackaged solutions.
       </p>
     </Col>
   </Row>

@@ -17,7 +17,12 @@ const Work = ({ history }) => (
     <Row>
       <Col>
         <h2 style={{ fontSize: '0.9rem', marginBottom: '15px' }}>Robertson Marketing &amp; Development</h2>
-        <img onClick={() => window.open('https://robertson-development.com', '_blank')} style={{ display: 'flex', maxWidth: '80%' }} alt="Robertson Marketing and Development" src={rdLogo} />
+        <img
+          onClick={() => window.open('https://robertson-development.com', '_blank')}
+          style={{ display: 'flex', maxWidth: '65%' }}
+          alt="Robertson Marketing and Development"
+          src={rdLogo}
+        />
       </Col>
     </Row>
   </>

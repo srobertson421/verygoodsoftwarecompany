@@ -14,10 +14,6 @@ const Methods = ({ history }) => (
         </li>
         <hr />
         <li className={styles.servicesListItem}>
-          Web App / Site Design
-        </li>
-        <hr />
-        <li className={styles.servicesListItem}>
           Custom Domain Management
         </li>
         <hr />
